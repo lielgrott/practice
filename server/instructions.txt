@@ -1,0 +1,31 @@
+excersise:
+
+write express server that manage users and their posts.
+
+users: {
+	name:String,
+	id: int,
+	birthdate: date
+}
+
+posts: {
+	id: int,
+	userId: int,
+	title: string,
+	post: string
+}
+
+routes:
+
+GET /users - return all users
+GET /users/:userId - return user with id = 'userId'
+POST /users - create new user
+PUT /users/:userId - update user
+DELETE /users/:userId - delete user and its posts
+
+GET /posts - return all posts
+GET /posts/:postId - return post with id = 'postId'
+GET /posts/user/:userId - return all post of specific user
+POST /posts/:userId - create post
+PUT /posts/:postId - update post
+DELETE /posts/:postId - delete post
