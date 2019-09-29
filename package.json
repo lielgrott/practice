@@ -1,0 +1,15 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "stam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liel",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "fs-extra": "^8.1.0"
+  }
+}

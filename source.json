@@ -1,0 +1,12 @@
+{
+    "key": "value",
+    "number": 1,
+    "object": {
+        "array": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+}
