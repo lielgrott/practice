@@ -1,0 +1,14 @@
+[
+    {
+        "postId": 0,
+        "userId": 0,
+        "title": "nice",
+        "post": "blah blah"
+    },
+    {
+        "postId": 1,
+        "userId": 0,
+        "title": "cool",
+        "post": "boo boom"
+    }
+]
