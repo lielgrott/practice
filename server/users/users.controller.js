@@ -22,7 +22,20 @@ let getUserById = (req, res) => {
     })
 }
 
+let createUser = (req, res) => {
+    let user = req.body;
+    console.log(user)
+    console.log(req);
+    userService.createUser(user, (err, user) => {
+        if (err) {
+            return res.status(500).send('something went wrong');
+        }
+        return res.json(user);
+    })
+}
+
 module.exports = {
     getAllUsers,
-    getUserById
+    getUserById,
+    createUser
 }

@@ -25,7 +25,19 @@ let getUserById = (userId, cb) => {
     });
 }
 
+let createUser = (user, cb) => {
+    fse.writeJSON(USER_FILE_LOCATION, user, (err, user) => {
+        if (err) {
+            console.log(err);
+            return cb(err);
+        }
+        cb(null, user);
+    })
+}
+
+
 module.exports = {
     getAllUsers,
-    getUserById
+    getUserById,
+    createUser
 };
